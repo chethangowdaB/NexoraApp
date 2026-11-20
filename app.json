@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "NEXORA",
+    "slug": "nexora",
+    "android": {
+      "permissions": ["RECORD_AUDIO", "POST_NOTIFICATIONS", "SCHEDULE_EXACT_ALARM", "VIBRATE"]
+    },
+    "ios": {
+      "infoPlist": { "UIBackgroundModes": ["audio"] }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "sounds": [
+            "./assets/sounds/chime.wav",
+            "./assets/sounds/sunrise.wav",
+            "./assets/sounds/bell.wav",
+            "./assets/sounds/pulse.wav"
+          ]
+        }
+      ],
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "NEXORA listens when you tap the mic.",
+          "speechRecognitionPermission": "NEXORA turns your voice into reminders."
+        }
+      ],
+      "expo-audio"
+    ]
+  }
+}
