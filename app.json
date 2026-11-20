@@ -3,10 +3,20 @@
     "name": "NEXORA",
     "slug": "nexora",
     "android": {
-      "permissions": ["RECORD_AUDIO", "POST_NOTIFICATIONS", "SCHEDULE_EXACT_ALARM", "VIBRATE"]
+      "permissions": [
+        "RECORD_AUDIO",
+        "POST_NOTIFICATIONS",
+        "SCHEDULE_EXACT_ALARM",
+        "VIBRATE"
+      ],
+      "package": "com.nexora.reminders"
     },
     "ios": {
-      "infoPlist": { "UIBackgroundModes": ["audio"] }
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      }
     },
     "plugins": [
       [

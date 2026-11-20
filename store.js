@@ -5,7 +5,7 @@ export const API_URL = "";
 
 const KEY = "nexora_reminders_v3";
 const SKEY = "nexora_settings_v1";
-export const DEFAULT_SETTINGS = { sound: "chime", voice: null, rate: 1, pitch: 1, speak: true };
+export const DEFAULT_SETTINGS = { sound: "chime", voice: null, rate: 1, pitch: 1, speak: true, reliabilityDone: false };
 
 const readLocal = async () => {
   try { return JSON.parse((await AsyncStorage.getItem(KEY)) || "[]"); } catch { return []; }
